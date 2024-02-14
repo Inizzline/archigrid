@@ -1,0 +1,161 @@
+.mainContainer {
+    min-height: 100vh;
+    background-color: #EEEDEB;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    padding: 50px 0;
+}
+
+.iconDiv {
+    position: relative;
+    display: flex;
+    left: 10%;
+}
+
+.icon {
+    color: #00093c;
+    opacity: .2;
+    margin-left: 1rem;
+}
+
+.span {
+    position: absolute;
+    white-space: nowrap;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+}
+
+.spanHeader {
+    font-size: 1rem;
+    opacity: .5;
+    color: #B31312;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00093c;
+    clip-path: circle(400px at right 50px);
+    opacity: .1;
+}
+
+.circleSpin {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    border-radius: 50%;
+    left: 85%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.circleSpin::before {
+    content: "";
+    position: absolute;
+    inset: -2px 15px;
+    background: linear-gradient(315deg, #B31312, #00093c);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.circleSpin:hover::before {
+    inset: -4px 0px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circleSpin::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: #162052;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circleSpinContent {
+    position: absolute;
+    inset: 20px;
+    border: 2px solid #070a1c;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circleSpinImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.text {
+    justify-content: flex-start;
+    align-items: start;
+    margin: 4rem 4rem;
+}
+
+.h2 {
+    display: flex;
+    justify-self: flex-start;
+    color: #00093c;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.p {
+    display: flex;
+    text-align: start;
+    color: #00093c;
+}
+
+@media screen and (max-width: 768px) {
+    .circle {
+        clip-path: circle(200px at right 50px);
+    }
+
+    .circleSpin {
+        left: 70%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .text {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        margin: 4rem -3rem;
+        margin-right: 0
+    }
+
+    .h2 {
+        font-size: 1rem;
+    }
+
+    .p {
+        padding-right: 1rem;
+    }
+    
+}

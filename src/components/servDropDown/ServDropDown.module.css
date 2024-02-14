@@ -1,0 +1,72 @@
+.subMenu {
+    width: 12rem;
+    top: 80px;
+    position: absolute;
+    text-align: start;
+    list-style: none;
+}
+
+/* .navList {
+    display: flex;
+    align-items: center;
+    height: 80px;
+} */
+
+.subMenu.clicked {
+    display: none;
+}
+
+.subMenu li {
+    background: #fff;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.subMenuLinks {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #092635;
+    padding: 13px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.subMenuLinkers {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #092635;
+    padding: 13px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.subMenuLinkers:hover {
+    background: #092635;
+    color: #fff;
+}
+
+.subMenuLinks:hover {
+    background: #092635;
+    color: #fff;
+}
+
+.forwardIcon {
+    display: inline-block;
+    vertical-align: -2px;
+    margin-left: 10px;
+    
+}
+
+@media screen and (max-width: 850px) {
+    .subMenu {
+        width: 10.5rem;
+        top: 280px;
+        position: absolute;
+        text-align: start;
+        list-style: none;
+    }
+}

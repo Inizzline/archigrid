@@ -1,0 +1,46 @@
+.subMenu {
+    width: 12rem;
+    top: 140px;
+    left: 150px;
+    position: absolute;
+    text-align: start;
+    list-style: none;
+}
+
+.subMenu.clicked {
+    display: none;
+}
+
+.subMenu li {
+    background: #fff;
+    background: green;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.subMenuLinks {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #092635;
+    padding: 13px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.subMenuLinks:hover {
+    background: #092635;
+    color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+    .subMenu {
+        width: 12rem;
+        top: 140px;
+        left: 110px;
+        position: absolute;
+        text-align: start;
+        list-style: none;
+    }
+}

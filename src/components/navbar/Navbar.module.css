@@ -1,0 +1,161 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0 40px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    justify-content: start;
+    cursor: pointer;
+}
+
+.navMenu {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    white-space: nowrap;
+    grid-gap: 40px;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.navLinks {
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    color: #2a2a2a;
+    transition: all 0.5s ease-in-out;
+}
+
+.navLinks:hover {
+    color: red;
+}
+
+.menuIcon {
+    display: none;
+}
+
+.icon {
+    color: #2a2a2a;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+        z-index: 99;
+    }
+
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        position: fixed;
+        top: 80px;
+        right: -110%;
+        width: 300px;
+        height: 100vh;
+        background: #092635;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+        padding: 40px 0 0 0;
+        margin: 0;
+        transition: all .8s ease;
+    }
+
+    .navMenu.active {
+        right: 0%;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .icon {
+        cursor: pointer;
+    }
+
+    .navLinks {
+        color: #fff;
+        display: block;
+        widows: 100%;
+        padding: 1rem 0;
+        margin-bottom: -25px;
+    }
+
+    .navLinks:hover {
+        background: #fff;
+        font-weight: 500;
+        color: #2a2a2a;
+    }
+
+    .navList {
+        display: block;
+        margin-bottom: -50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navMenu {
+        width: 300px;
+    }
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .navLinks {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 481px) {
+    .logo {
+        height: 55px;
+        width: 55px;
+    }
+    .navMenu {
+        width: 300px;
+    }
+
+    .navLinks {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 281px) {
+
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    .navMenu {
+        width: 200px;
+    }
+
+    .navLinks {
+        font-size: .8rem;
+    }
+}
+

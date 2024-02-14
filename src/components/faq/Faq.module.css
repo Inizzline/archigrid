@@ -1,0 +1,165 @@
+.container {
+    height: 100vh;
+    display: flex;
+    background: url(/images/img/bluebg.png);
+}
+
+.leftPart {
+    display: flex;
+    flex: .3;
+    justify-content: flex-end;
+    padding-top: 7em;
+    padding-left: 9em;
+}
+
+.rightPart {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding-top: 100px;
+    z-index: 1;
+}
+
+.accordion {
+    width: 80%;
+    justify-content: center;
+}
+
+.item {
+    background: #e8e6e6;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.title {
+    color: #00093c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    color: #151515;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.content.show {
+    height: auto;
+    max-height: 999px;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+@media screen and (max-width: 768px) {
+     .leftPart {
+        display: none;
+    }
+
+    .title {
+        font-size: .9rem;
+    }
+   
+}
+
+@media screen and (max-width: 600px) {
+   .title {
+       font-size: .8rem;
+   }
+  
+}
+
+
+/* @media screen and (max-width: 950px) {
+    .leftPart {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .leftPart {
+        display: none;
+    }
+
+    .accordion {
+        width: 500px;
+    }
+
+    .item {
+        margin-right: 10px;
+        padding: 25px 60px;
+    }
+
+    .h2 {
+        font-size: 1.3rem;
+    }
+
+    .content.show  {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .accordion {
+        width: 350px;
+    }
+
+    .item {
+        margin-right: 10px;
+        padding: 10px 20px;
+    }
+
+    .h2 {
+        font-size: 1rem;
+    }
+
+    .content.show  {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 398px) {
+    .accordion {
+        width: 250px;
+    }
+
+    .item {
+        margin-right: 10px;
+        padding: 10px 20px;
+    }
+
+    .h2 {
+        font-size: .9rem;
+    }
+
+    .content.show  {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .accordion {
+        width: 250px;
+    }
+
+    .item {
+        margin-right: 10px;
+        padding: 10px 20px;
+    }
+
+    .h2 {
+        font-size: .8rem;
+    }
+
+    .content.show  {
+        font-size: .75rem;
+    }
+} */

@@ -1,0 +1,442 @@
+.footer {
+    width: 100%;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    padding: 80px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.container {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.h2 {
+    color: #B31312;
+    margin-bottom: 20px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.states {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.p {
+    color: #bbb;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.phone {
+    color: #bbb;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.officeH2 {
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-top: 95px;
+    color: #B31312;
+    font-size: 2em;
+}
+
+.h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.email {
+    color: #bbb;
+    margin: 15px 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: fit-content;
+}
+
+.email:hover {
+    color: #B31312;
+}
+
+.socialIcons {
+    margin-bottom: 10px;
+    margin-top: 115px;
+    width: fit-content;
+    display: inline-flex;
+    color: aqua;
+}
+
+.socialLink {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #B31312;
+    border-radius: 50%;
+    margin: 0 10px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.socialLink:hover {
+    color: #00093c;
+    background: #fff;
+    border: 2px solid #00093c;
+}
+
+.icon {
+    color: #fff;
+}
+
+.icon:hover {
+    color: #B31312;
+}
+
+.socialIconsParagraph {
+    font-size: 1em;
+    color: #bbb;
+    margin: 0 10px;
+}
+
+.hr {
+    width: 85%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+    color: #bbb;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 60px;
+    }
+
+    .footer {
+        padding: 50px 0 0px;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+    
+    .col:nth-child(2), .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+
+    .h2 {
+        font-size: 1rem;
+    }
+
+    .officeH2 {
+        font-size: 1rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .states {
+        font-size: 1rem;
+    }
+
+    .h3 {
+        font-size: 1rem;
+    }
+
+    .socialIcons {
+        margin-top: 5px;
+    }
+}
+
+/* @media screen and (max-width: 1024px) {
+    .h2 {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    .officeH2 {
+        font-size: 1.2rem;
+        padding-top: 1.5rem;
+        margin-bottom: 15px;
+       
+    }
+
+    .states {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+        width: 70px;
+    }
+
+    .footer {
+        padding: 50px 0 0px;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+    
+    .col:nth-child(2), .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+
+    .h2 {
+        font-size: 1.3rem;
+    }
+
+    .officeH2 {
+        font-size: 1.3rem;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .states {
+        font-size: 1.1rem;
+    }
+
+    .h3 {
+        font-size: 1.1rem;
+        margin-bottom: -5px;
+    }
+
+    .socialIcons {
+        margin-top: 15px;
+    }
+
+    .hr {
+        width: 78%;
+    }
+
+    .copyright {
+        width: 80%;
+        text-align: start;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .logo {
+        width: 60px;
+    }
+
+    .h2 {
+        font-size: 1.1rem;
+    }
+
+    .officeH2 {
+        font-size: 1.1rem;
+    }
+
+    .states {
+        font-size: 1rem;
+    }
+
+    .h3 {
+        font-size: 1rem;
+    }
+
+    .h4 {
+        font-size: 1rem;
+    }
+
+    .p {
+        font-size: .85rem;
+    }
+
+    .phone {
+        font-size: .85rem;
+    }
+
+    .email {
+        font-size: .85rem;
+    }
+
+    .copyright {
+        font-size: 0.85rem;
+    }
+
+    .socialIconsParagraph {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 381px) {
+    .logo {
+        width: 55px;
+    }
+
+    .h2 {
+        font-size: .9rem;
+    }
+
+    .officeH2 {
+        font-size: .9rem;
+    }
+
+    .states {
+        font-size: .8rem;
+    }
+
+    .h3 {
+        font-size: .8rem;
+    }
+
+    .h4 {
+        font-size: .8rem;
+    }
+
+    .p {
+        font-size: .75rem;
+    }
+
+    .phone {
+        font-size: .75rem;
+    }
+
+    .email {
+        font-size: .75rem;
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+    }
+
+    .socialIconsParagraph {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .logo {
+        width: 50px;
+    }
+
+    .h2 {
+        font-size: .9rem;
+    }
+
+    .officeH2 {
+        font-size: .9rem;
+    }
+
+    .states {
+        font-size: .8rem;
+    }
+
+    .h3 {
+        font-size: .8rem;
+    }
+
+    .h4 {
+        font-size: .8rem;
+    }
+
+    .p {
+        font-size: .75rem;
+    }
+
+    .phone {
+        font-size: .75rem;
+    }
+
+    .email {
+        font-size: .75rem;
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+    }
+
+    .socialIconsParagraph {
+        font-size: 0.75rem;
+    }
+} */
+
+/* @media screen and (max-width: 850px) {
+    .footer {
+        padding: 50px 0 0px;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+    
+    .col:nth-child(2), .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+
+    .h2 {
+        font-size: 1.3em;
+    }
+
+    .officeH2 {
+        font-size: 1.3em;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .states {
+        font-size: 1.1em;
+    }
+
+    .h3 {
+        font-size: 1.1em;
+        margin-bottom: -5px;
+    }
+
+    .socialIcons {
+        margin-top: 15px;
+    }
+
+    .hr {
+        width: 78%;
+    }
+
+    .copyright {
+        width: 80%;
+        text-align: start;
+        margin: 0 auto;
+    }
+} */

@@ -1,0 +1,95 @@
+.mainContainer {
+    min-height: 70vh;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* min-height: 100vh; */
+    background: url(/images/img/wastemanagement.png) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 40px;
+}
+
+.h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #B31312;
+}
+
+.p {
+    text-align: justify;
+}
+
+.spanText {
+    font-weight: bold;
+    color: #111;
+}
+
+.btnDiv {
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.btn {
+    background-color: #B31312;
+    border: none;
+    color: #fff;
+    border: 1px solid #B31312;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 8px 30px;
+}
+
+.btn:hover {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #B31312;
+}
+
+@media screen and (max-width:1200px) {
+    .inner {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .h2 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .container {
+        padding: 0;
+    }
+
+    .inner {
+        padding: 15px;
+    }
+}

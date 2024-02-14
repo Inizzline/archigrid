@@ -1,0 +1,159 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 4rem 6rem;
+}
+
+.h3Div {
+    flex: 20%;
+}
+
+.h3 {
+    align-items: flex-end;
+    text-align: center;
+    color: #2a2a2a;
+    justify-content: center;
+    font-size: 2.5em;
+}
+
+.empty {
+    flex: 30%;
+}
+
+.emptyIcon {
+    font-size: 15rem;
+    opacity: 0.1;
+}
+
+.text {
+   flex: 50%;
+}
+
+.p {
+    max-width: 680px;
+    text-align: justify;
+    line-height: 1.5;
+    align-items: center;
+    font-size: 16px;
+    /* color: #818589; */
+    color: #000;
+}
+
+ @media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    .h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 481px) {
+    .h3 {
+        font-size: 1.2rem;
+    }
+
+    .p {
+        font-size: .9rem;
+    }
+}
+
+/* @media screen and (min-width: 1200px) {
+
+    .h3 {
+        font-size: 1.8rem;
+        margin-top: -8.5rem;
+    }
+
+    .p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        display: flex;
+        margin: 2rem 2rem;
+    }
+
+    .h3 {
+        font-size: 1.5rem;
+        margin-top: -8rem;
+    }
+
+    .p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 2rem;
+    }
+
+    .h3 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .p {
+        margin-top: -14rem;
+        font-size: -2rem;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 2rem;
+    }
+
+    .h3 {
+        font-size: 1.3rem;
+        margin-top: -2rem;
+    }
+
+    .p {
+        margin-top: -14rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 381px) {
+
+    .h3 {
+        font-size: 1.2rem;
+    }
+
+    .p {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 281px) {
+
+    .h3 {
+        font-size: 1rem;
+    }
+
+    .p {
+        font-size: .8rem;
+    }
+} */

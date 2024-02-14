@@ -1,0 +1,85 @@
+.logos {
+    overflow: hidden;
+    padding: 40px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logoSlider {
+    display: inline-block;
+    animation: slide 10s infinite linear;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.img {
+    margin: 0 40px;
+}
+
+.logos:hover .logoSlider {
+    animation-play-state: paused;
+}
+
+.logos::before,
+.logos::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 150px;
+}
+
+.logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    
+}
+
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+@media screen and (max-width: 768px) {
+    .logos {
+        padding: 20px 0;
+    }
+
+    .logoSlider {
+        animation: slide 30s infinite linear;
+    }
+
+    .logos::before,
+    .logos::after {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .img {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+/* @media screen and (max-width: 381px) {
+    .img {
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .img {
+        height: 70px;
+        width: 70px;
+    }
+} */
