@@ -1,7 +1,5 @@
 "use client"
-import Cards from "@/components/cards/Cards"
 import StatementCss from "./Statements.module.css"
-import VisionAndMissionData from "../ourVis&MisData/Vision&MissionData"
 import { useState } from "react"
 import Fade from 'react-reveal/Fade';
 
@@ -9,7 +7,6 @@ const Statements = (i) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [ selected, setSelected ] = useState(false);
-    const [ check, setCheck ] = useState(false);
 
 
     const toggle = () => {
@@ -43,18 +40,6 @@ const Statements = (i) => {
             </div>
         </Fade>
     </div>
-    // <div className={StatementCss.mission}>
-    //     <div>
-    //         <h1 className={StatementCss.missionH1}>Our Statements</h1>
-    //         <section className={StatementCss.missionSection}>
-    //             {VisionAndMissionData.map((item, index) => {
-    //                 return(
-    //                     <Cards key={index} item={item}/>
-    //                 )
-    //             })}
-    //         </section>
-    //     </div>
-    // </div>
   )
 }
 

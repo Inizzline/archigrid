@@ -1,4 +1,4 @@
-import { civil1, civil2, civil3, civil5, civil6, civil7, oilandgas11, oilandgas22 } from "../../../public/images"
+import {oilandgas11, oilandgas22, pics1 } from "../../../public/images"
 
 export const OilAndGasProjectData = [
     {
@@ -10,5 +10,10 @@ export const OilAndGasProjectData = [
         title: "Oil&Gas",
         desc: "Oil and gas tank project",
         img: oilandgas22
+    },
+    {
+        title: "Oil&Gas",
+        desc: "Oil and gas tank project",
+        img: pics1
     },
 ]

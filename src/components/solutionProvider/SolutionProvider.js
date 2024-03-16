@@ -1,35 +1,6 @@
 "use client"
-import React, { useState } from 'react'
 import SolutionsProviderCss from "./SolutionProvider.module.css"
 import Fade from 'react-reveal/Fade';
-import Integrity from '@/utilities/coreValuesComponents/integrity/Integrity'
-import Quality from '@/utilities/coreValuesComponents/quality/Quality'
-import Safety from '@/utilities/coreValuesComponents/safety/Safety'
-import Proactiveness from '@/utilities/coreValuesComponents/procativeness/Proactiveness'
-import Innovation from '@/utilities/coreValuesComponents/innovation/Innovation'
-
-// const coreValuesData = [
-//     {
-//       title: "Integrity",
-//       paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,"
-//     },
-//     {
-//       title: "Proactiveness",
-//       paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,"
-//     },
-//     {
-//       title: "Orderliness",
-//       paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,"
-//     },
-//     {
-//       title: "Business",
-//       paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,"
-//     },
-//     {
-//       title: "Thinker",
-//       paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,"
-//     },
-// ]
 
 const coreValuesData = [
   "Integrity",
@@ -40,10 +11,6 @@ const coreValuesData = [
 ]
 
 const SolutionProvider = () => {
-
-  // const [coreValues, setCoreValues] = useState("Integrity");
-
-  // const [colorChange, setColourChange] = useState(false)
   
   return (
     <div>
@@ -89,45 +56,8 @@ const SolutionProvider = () => {
             </p>
           </div>
         </Fade>
-      {/* <h2 className={SolutionsProviderCss.header}>Our Core Values</h2>
-        <div className={SolutionsProviderCss.container}>
-          <div className={SolutionsProviderCss.leftSide}>
-            <ul className={SolutionsProviderCss.ul}>
-              {coreValuesData.map((item, i) =>(
-                <li className={SolutionsProviderCss.li} key={i} onClick={() => setCoreValues(item)}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          <div className={SolutionsProviderCss.rightSide}>
-              {
-                coreValues === "Integrity" ? (<Integrity/>) : 
-                coreValues === "Quality" ? (<Quality/>) :
-                coreValues === "Safety" ? (<Safety/>) :
-                coreValues === "Innovation" ? (<Innovation/>) : (<Proactiveness/>)
-              }
-          </div>
-        </div> */}
       </div>
       </div>
-    // <div className={SolutionsProviderCss.container}>
-    //   <h3 className={SolutionsProviderCss.h3}>Our Core Values</h3>
-    //   <div className={SolutionsProviderCss.content}>
-    //     <div className={SolutionsProviderCss.list}>
-    //       {
-    //         coreValuesData.map((item, i) => {
-    //           return(
-    //             <ul className={SolutionsProviderCss.ul} key={i}>
-    //               <li className={SolutionsProviderCss.li}>{item.title}</li>
-    //             </ul>
-    //           )
-    //         })
-    //       }
-    //     </div>
-    //     <div className={SolutionsProviderCss.text}>
-    //       <p>{coreValuesData.paragraph}</p>
-    //     </div>
-    //   </div>
-    // </div>
   )
 }
 

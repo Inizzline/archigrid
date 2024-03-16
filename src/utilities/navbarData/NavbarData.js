@@ -15,10 +15,6 @@ const NavbarData = [
         title: "Services",
         url: "/services",
     },
-    // {
-    //     title: "Clients",
-    //     url: "/clients",
-    // },
     {
         title: "Projects",
         url: "/projects",

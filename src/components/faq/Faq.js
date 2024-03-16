@@ -5,6 +5,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stage } from '@react-three/drei';
 import Question_mark from "../Question_mark"
 import FaqData from '@/utilities/faqData/FaqData';
+import Fade from 'react-reveal/Fade';
 
 const Faq = () => {
 
@@ -18,6 +19,11 @@ const Faq = () => {
   }
   return (
     <div className={FaqCss.container}>
+      <div className={FaqCss.faqDiv}>
+      <Fade left duration={3000}><hr className={FaqCss.hrTop}/></Fade>
+        <Fade right duration={2000}><h1 className={FaqCss.h1}>FAQ</h1></Fade>
+        <Fade right duration={3000}><hr className={FaqCss.hrBottom}/></Fade>
+      </div>
       <div className={FaqCss.leftPart}>
         <Canvas>
           <Stage environment={"city"} intensity={0.6}>
@@ -28,6 +34,7 @@ const Faq = () => {
       </div>
       <div className={FaqCss.rightPart}>
         <div className={FaqCss.accordion}>
+        <Fade right duration={2000}>
           {FaqData.map((item, i) => (
             <div className={FaqCss.item} key={i}>
               <div className={FaqCss.title} onClick={() => toggle(i)}>
@@ -36,10 +43,10 @@ const Faq = () => {
               </div>
               <div className={selected === i ? `${FaqCss.content} ${FaqCss.show}` : `${FaqCss.content}`}>
                 {item.Answer}
-                {/* <p className={FaqCss.p}>{item.Answer}</p> */}
               </div>
             </div>
           ))}
+          </Fade>
         </div>
       </div>
     </div>

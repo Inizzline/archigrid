@@ -4,6 +4,31 @@
     background: url(/images/img/bluebg.png);
 }
 
+.faqDiv {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+
+.hrTop {
+    background-color: #B31312;
+    height: 2px;
+    border: none;
+    width: 20px;
+}
+
+.hrBottom {
+    background-color: #B31312;
+    height: 2px;
+    border: none;
+    width: 20px;
+    margin-left: 70%;
+}
+
+.h1 {
+    color: #fff;
+}
+
 .leftPart {
     display: flex;
     flex: .3;
@@ -66,100 +91,29 @@
     .title {
         font-size: .9rem;
     }
+
+    .faqDiv {
+        left: 40%;
+    }
    
 }
 
 @media screen and (max-width: 600px) {
    .title {
        font-size: .8rem;
-   }
+    } 
+
   
-}
 
+    .hrTop {
+        width: 15px;
+    }
+    
+    .hrBottom {
+        width: 15px;
+    }
 
-/* @media screen and (max-width: 950px) {
-    .leftPart {
-        display: none;
+    .h1 {
+        font-size: 1.5rem;
     }
 }
-
-@media screen and (max-width: 768px) {
-
-    .leftPart {
-        display: none;
-    }
-
-    .accordion {
-        width: 500px;
-    }
-
-    .item {
-        margin-right: 10px;
-        padding: 25px 60px;
-    }
-
-    .h2 {
-        font-size: 1.3rem;
-    }
-
-    .content.show  {
-        font-size: 1.1rem;
-    }
-}
-
-@media screen and (max-width: 481px) {
-    .accordion {
-        width: 350px;
-    }
-
-    .item {
-        margin-right: 10px;
-        padding: 10px 20px;
-    }
-
-    .h2 {
-        font-size: 1rem;
-    }
-
-    .content.show  {
-        font-size: .9rem;
-    }
-}
-
-@media screen and (max-width: 398px) {
-    .accordion {
-        width: 250px;
-    }
-
-    .item {
-        margin-right: 10px;
-        padding: 10px 20px;
-    }
-
-    .h2 {
-        font-size: .9rem;
-    }
-
-    .content.show  {
-        font-size: .8rem;
-    }
-}
-
-@media screen and (max-width: 281px) {
-    .accordion {
-        width: 250px;
-    }
-
-    .item {
-        margin-right: 10px;
-        padding: 10px 20px;
-    }
-
-    .h2 {
-        font-size: .8rem;
-    }
-
-    .content.show  {
-        font-size: .75rem;
-    }
-} */

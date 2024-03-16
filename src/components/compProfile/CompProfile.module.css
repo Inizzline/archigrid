@@ -1,6 +1,6 @@
 .container {
     height: 350px;
-    background-image: url("/images/img/pic4.png");
+    background-image: url("/images/img/civil.png");
     align-items: center;
     text-align: center;
 }
@@ -17,10 +17,10 @@
     font-size: 1.2rem;
     font-weight: 800;
     line-height: 5px;
-    color: #00093c;
+    color: #fff;
     text-align: center;
     background: transparent;
-    border: 3px solid #00093c;
+    border: 3px solid #fff;
     border-radius: 50px;
     cursor: pointer;
     transition: all .3s ease-in-out;

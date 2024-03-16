@@ -3,8 +3,6 @@
     justify-content: center;
     align-items: center;
     background: #111;
-    /* position: relative; */
-    /* padding: 80px 0; */
 }
 
 .container {
@@ -13,7 +11,6 @@
     align-items: center;
     flex-direction: column;
     padding: 50px 0;
-    /* position: relative; */
 }
 
 .title {
@@ -30,7 +27,6 @@
 }
 
 .imageDiv {
-    /* position: relative; */
     height: 50%;
     width: 80%;
     overflow: hidden;
@@ -71,6 +67,7 @@
     font-weight: 500;
     border-radius: 3px;
     padding: 10px 30px;
+    margin-top: 10px;
 }
 
 .btn:hover {
@@ -95,5 +92,10 @@
     .info {
         width: 100%;
         margin-right: 50px;
+    }
+
+    .btn {
+        font-size: .9rem;
+        padding: 8px 20px;
     }
 }

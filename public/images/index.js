@@ -9,7 +9,6 @@ import heroSlider7 from "./img/heroSlider7.png"
 import pics1 from "./img/pics1.png"
 import pics2 from "./img/pics2.png"
 import pics3 from "./img/pics3.png"
-import pics4 from "./img/pics4.png"
 import civil from "./img/civil.jpeg"
 import civil1 from "./img/civil1.png"
 import civil2 from "./img/civil2.png"
@@ -54,7 +53,6 @@ export {
     pics1,
     pics2,
     pics3,
-    pics4,
     civil1,
     civil2,
     civil3,

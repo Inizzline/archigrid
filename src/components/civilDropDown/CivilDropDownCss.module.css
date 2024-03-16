@@ -11,12 +11,6 @@
     display: none;
 }
 
-/* .subMenu li {
-    background: #fff;
-    background: green;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-} */
 
 .subMenuLinks {
     display: block;
@@ -32,4 +26,15 @@
 .subMenuLinks:hover {
     background: #092635;
     color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+    .subMenu {
+        width: 13rem;
+        top: 15px;
+        left: 80px;
+        position: absolute;
+        text-align: start;
+        list-style: none;
+    }
 }

@@ -32,19 +32,19 @@ const Footer = () => {
             <div  className={FooterCss.col}>
                 <h2 className={FooterCss.officeH2}>OFFICE</h2>
                 <div className={FooterCss.h3}>General Info</div>
-                    <Link className={FooterCss.link} href="">
+                    <Link className={FooterCss.link} href="mailto:info@archigridltd.com">
                         <p className={FooterCss.email}>info@archigridltd.com</p>
                     </Link>
                 <div className={FooterCss.h3}>Commercial Service</div>
-                    <Link className={FooterCss.link} href="">
+                    <Link className={FooterCss.link} href="mailto:commercials@archigridltd.com">
                         <p className={FooterCss.email}>commercials@archigridltd.com</p>
                     </Link>
                 <div className={FooterCss.h3}>Construction</div>
-                    <Link className={FooterCss.link} href="">
+                    <Link className={FooterCss.link} href="mailto:construction@archigridltd.com">
                         <p className={FooterCss.email}>construction@archigridltd.com</p>
                     </Link>
                 <div className={FooterCss.h3}>Architecture</div>
-                <Link className={FooterCss.link} href="">
+                <Link className={FooterCss.link} href="mailto:architecture@archigridltd.com">
                     <p className={FooterCss.email}>architecture@archigridltd.com</p>
                 </Link>
             </div>
@@ -52,10 +52,10 @@ const Footer = () => {
         <Fade right duration={3000}>
            <div  className={FooterCss.col}>
                 <div className={FooterCss.socialIcons}>
-                    <Link href="" className={FooterCss.socialLink}><FaLinkedinIn size={15} className={FooterCss.icon}/></Link>
-                    <Link href="" className={FooterCss.socialLink}><BsTwitterX size={15} className={FooterCss.icon}/></Link>
-                    <Link href="" className={FooterCss.socialLink}><FaFacebook size={15} className={FooterCss.icon}/></Link>
-                    <Link href="" className={FooterCss.socialLink}><FaInstagram size={15} className={FooterCss.icon}/></Link>
+                    <Link href="https://www.linkedin.com/company/archigrid-construction-ltd/" target="_blank" rel="noopener noreferrer" className={FooterCss.socialLink}><FaLinkedinIn size={15} className={FooterCss.icon}/></Link>
+                    <Link href="https://www.twitter.com/ArchigridConst" target="_blank" rel="noopener noreferrer" className={FooterCss.socialLink}><BsTwitterX size={15} className={FooterCss.icon}/></Link>
+                    {/* <Link href="" className={FooterCss.socialLink}><FaFacebook size={15} className={FooterCss.icon}/></Link>
+                    <Link href="" className={FooterCss.socialLink}><FaInstagram size={15} className={FooterCss.icon}/></Link> */}
                 </div>
             <div>
             <p className={FooterCss.socialIconsParagraph}>Reach us on any of our Social media handles</p>

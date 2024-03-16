@@ -38,9 +38,9 @@ const Slider = () => {
 
   return (
     <div className={SliderCss.slider}>
-     <AiOutlineArrowLeft className={`${SliderCss.arrow} ${SliderCss.prev}`} onClick={prevSlide}/>
-     <AiOutlineArrowRight className={`${SliderCss.arrow} ${SliderCss.next}`} onClick={nextSlide}/>
-     {SliderData.map((item, index) => {
+    <AiOutlineArrowLeft className={`${SliderCss.arrow} ${SliderCss.prev}`} onClick={prevSlide}/>
+    <AiOutlineArrowRight className={`${SliderCss.arrow} ${SliderCss.next}`} onClick={nextSlide}/>
+    {SliderData.map((item, index) => {
         return(
             <div key={index} className={index === currentSlide ? `${SliderCss.slide} ${SliderCss.current}` : `${SliderCss.slide}`}>
                 {index === currentSlide && (
@@ -59,7 +59,7 @@ const Slider = () => {
                 )}
             </div>
         )
-     })}
+    })}
     </div>
   )
 }

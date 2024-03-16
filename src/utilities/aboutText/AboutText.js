@@ -16,18 +16,6 @@ const AboutText = () => {
         </div>
       </div>
     </Fade>
-    // <div className={AboutTextCss.whoWeAre}>
-    //     <div className={AboutTextCss.whoWeAreH3Div}>
-    //         <h3 className={AboutTextCss.whoWeAreH3}>Who We Are</h3>
-    //     </div>
-    //     <div className={AboutTextCss.whoWeAreParaDiv}>
-    //         <p className={AboutTextCss.whoWeAreP}>
-    //         Archigrid Construction Limited is a premier building, heavy engineering, and maintenance specialist company in Nigeria. Founded in 2010, we offer engineering solutions in civil, heavy engineering, mechanical, electrical, and plumbing for projects and facilities maintenance services. Our head office is located in Lagos, with a branch office in Port Harcourt.
-    //         <br/> 
-    //         Our expertise in engineering services extends to design, development, construction, management, and other peripheral property-oriented services. We have a diverse range of skills and a strong commitment to client satisfaction, prompt service delivery, and an unwavering dedication to quality and safety.
-    //         </p>
-    //     </div>
-    // </div>
   )
 }
 

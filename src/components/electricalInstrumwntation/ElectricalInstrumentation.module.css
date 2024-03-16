@@ -57,6 +57,7 @@
     font-weight: 500;
     border-radius: 3px;
     padding: 10px 40px;
+    margin-top: 10px;
 }
 
 .btn:hover {
@@ -87,5 +88,10 @@
 
     .img {
         height: 300px;
+    }
+
+    .btn {
+        font-size: .9rem;
+        padding: 8px 20px;
     }
 }

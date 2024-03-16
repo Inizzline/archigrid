@@ -1,11 +1,11 @@
 const FaqData = [
     {
         Question: "What type of certification do you have",
-        Answer: "We are company registered in Nigeria, in compliance with all Nigerian certification in Building and Oil & gas environment"
+        Answer: "We are company registered in Nigeria, in compliance with all Nigerian certification in Building and Oil & gas project"
     },
     {
         Question: "What type of construction do you do",
-        Answer: "We are a contraction company that is specialized in Building, Electrical, Mechanical, oil & gas and waste management "
+        Answer: "We are a construction company that is specialized in Building, Electrical, Mechanical, oil & gas and waste management "
     },
     {
         Question: "How do you charge for project",

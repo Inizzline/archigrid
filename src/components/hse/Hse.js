@@ -69,12 +69,6 @@ const Hse = () => {
             </p>
           </div>
         </Fade>
-        {/* <div className={HseCss.iconSpinDiv}>
-          <div className={HseCss.spinLogo}></div>
-          <div className={HseCss.textSpinDiv}>
-            <p className={HseCss.textSpin}>Health & Safety Policy - Archigrid Construction Ltd</p>
-          </div>
-        </div> */}
       </div>
     </div>
   )

@@ -36,9 +36,9 @@
 
 @media screen and (max-width: 850px) {
     .subMenu {
-        width: 12rem;
-        top: 60px;
-        left: 110px;
+        width: 16rem;
+        top: 68px;
+        left: 40px;
         position: absolute;
         text-align: start;
         list-style: none;

@@ -1,185 +1,91 @@
 "use client"
-import React, { useState } from 'react'
-import Image from 'next/image'
+import Image from "next/image"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+import 'swiper/css';
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 import ProjectCss from "./Projects.module.css"
-import { pics1, pics2, pics3, pics4 } from '../../../public/images'
+import { elect, hvac11, pics2, civil, maintenance } from "../../../public/images";
+import { useRouter } from 'next/navigation'
 
-const Projects = () => {
+export default () => {
 
-    const [newItems, setNewItems] = useState([{
-        image: "/images/img/pics1.png",
-        title: "Name Slider",
-        desc: "Desc",
-        isActive: false
-    },{
-        image: "/images/img/pics2.png",
-        title: "Name Slider",
-        desc: "Desc",
-        isActive: false
-    },{
-        image: "/images/img/pics3.png",
-        title: "Name Slider",
-        desc: "Desc",
-        isActive: false
-    },{
-        image: "/images/img/pics4.png",
-        title: "Name Slider",
-        desc: "Desc",
-        isActive: false
-    }])
+    const router = useRouter();
 
-    const [current, setCurrent] = useState(0);
-
-    let thumbnailClasses = [ProjectCss.carousel]
-    thumbnailClasses.push(ProjectCss.next)
-
-    const nextClick = () => {
-        let i = current;
-        if(current >= newItems.length -1) {
-            i = 0
-        } else {
-            i = i +1
-        }
-        
-        console.log(thumbnailClasses)
-        console.log(i);
-        setNewItems(item=> {
-            item[i].isActive = true
-            return[
-                ...item,
-            ]
-        })
-        thumbnailClasses.push(i == 0)
-        setCurrent(i)
-    }
-
-    const prevClick = () => {
-        let i = current;
-        if(current <= 0) {
-            i = newItems.length -1
-        } else {
-            i = i -1
-        }
-        console.log(i);
-        setCurrent(i)
-    }
-
-    console.log(thumbnailClasses)
-    
   return (
     <div className={ProjectCss.mainContainer}>
-      <div className={ProjectCss.carousel}>
-      {/* List Items */}
-        <div className={ProjectCss.list}>
-            <div className={ProjectCss.item}>
-                <Image className={ProjectCss.img} height={500} width={500} src={newItems[current].image} alt="First Pic"/>
-                <div className={ProjectCss.content}>
-                    <div className={ProjectCss.author}>Ini</div>
-                    <div className={ProjectCss.title}>DESIGN SLIDER</div>
-                    <div className={ProjectCss.topic}>ANIMAL</div>
-                    <div className={ProjectCss.desc}>
-                        You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-                    </div>
-                    <div className={ProjectCss.buttonDiv}>
-                        <button className={ProjectCss.btn}>SEE MORE</button>
-                        <button className={ProjectCss.btn}>SEE MORE</button>
-                    </div>
-                </div>
-            </div>
-            <div className={ProjectCss.item}>
-                <Image className={ProjectCss.img} height={100} width={100} src={pics2} alt="First Pic"/>
-                <div className={ProjectCss.content}>
-                    <div className={ProjectCss.author}>Ini</div>
-                    <div className={ProjectCss.title}>MAGNET SLIDER</div>
-                    <div className={ProjectCss.topic}>PLANT</div>
-                    <div className={ProjectCss.desc}>
-                        simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    </div>
-                    <div className={ProjectCss.buttonDiv}>
-                        <button className={ProjectCss.btn}>SEE MORE</button>
-                        <button className={ProjectCss.btn}>SEE MORE</button>
-                    </div>
-                </div>
-            </div>
-            <div className={ProjectCss.item}>
-                <Image className={ProjectCss.img} height={100} width={100} src={pics3} alt="First Pic"/>
-                <div className={ProjectCss.content}>
-                    <div className={ProjectCss.author}>Ini</div>
-                    <div className={ProjectCss.title}>AMEBO SLIDER</div>
-                    <div className={ProjectCss.topic}>HUMAN</div>
-                    <div className={ProjectCss.desc}>
-                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </div>
-                    <div className={ProjectCss.buttonDiv}>
-                        <button className={ProjectCss.btn}>SEE MORE</button>
-                        <button className={ProjectCss.btn}>SEE MORE</button>
-                    </div>
-                </div>
-            </div>
-            <div className={ProjectCss.item}>
-                <Image className={ProjectCss.img} height={100} width={100} src={pics4} alt="First Pic"/>
-                <div className={ProjectCss.content}>
-                    <div className={ProjectCss.author}>Ini</div>
-                    <div className={ProjectCss.title}>TECH DESIGN SLIDER</div>
-                    <div className={ProjectCss.topic}>TECHNOLOGY</div>
-                    <div className={ProjectCss.desc}>
-                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    </div>
-                    <div className={ProjectCss.buttonDiv}>
-                        <button className={ProjectCss.btn}>SEE MORE</button>
-                        <button className={ProjectCss.btn}>SEE MORE</button>
-                    </div>
-                </div>
-            </div>
+        <div className={ProjectCss.h2Div}>
+        <h2 className={ProjectCss.h2}>Our Projects</h2>
         </div>
-        {/* Thumbnail Images */}
-        <div className={ProjectCss.thumbnail}>
-        {
-            newItems.map((item)=> {
-                return(
-                    <div className={ProjectCss.thumbnail}>
-                        <Image className={ProjectCss.img} height={100} width={100} src={item.image} alt="First Pic"/>
-                        <div className={ProjectCss.content}>
-                            <div className={ProjectCss.title}>{item.title}</div>
-                            <div className={ProjectCss.desc}>{item.desc}</div>
-                        </div>
-                    </div>
-                )
-            })
-        }
-            
-            <div className={ProjectCss.item}>
-                <Image className={ProjectCss.img} height={100} width={100} src={pics3} alt="First Pic"/>
-                <div className={ProjectCss.content}>
-                    <div className={ProjectCss.title}>Name Slider</div>
-                    <div className={ProjectCss.desc}>Desc</div>
+        <Swiper className={ProjectCss.swiper}
+            effect={'coverflow'}
+            grabCursor={true}
+            spaceBetween={30}
+            centeredSlides={true}
+            initialSlide={2}
+            speed={600}
+            preventClicks={true}
+            slidesPerView={3}
+            coverflowEffect={{
+            rotate: 0,
+            stretch: 80,
+            depth: 350,
+            modifier: 1,
+            slideShadows: true
+        }}
+        breakpoints={{
+            600: {
+                slidesPerView: 3
+            },
+            600: {
+                slidesPerView: 3
+            },
+            481: {
+                slidesPerView: 1
+            },
+            360: {
+                slidesPerView: 1.1,
+            },
+            280: {
+                slidesPerView: 1,
+            }
+        }}
+        pagination={{el: ProjectCss.swiperPagination, clickable: true}}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        >
+            <SwiperSlide className={ProjectCss.swiperSlide} onClick={()=>router.push("/projects/civilProject")}>
+                <Image className={ProjectCss.img} src={civil} height={500} width={500} alt="pics1"/>
+                <div className={ProjectCss.title}>
+                    <span className={ProjectCss.span}>Civil</span>
                 </div>
-            </div>
-            <div className={ProjectCss.item}>
-                <Image className={ProjectCss.img} height={100} width={100} src={pics4} alt="First Pic"/>
-                <div className={ProjectCss.content}>
-                    <div className={ProjectCss.title}>Name Slider</div>
-                    <div className={ProjectCss.desc}>Desc</div>
+            </SwiperSlide>
+            <SwiperSlide className={ProjectCss.swiperSlide} onClick={()=>router.push("/projects/electricalInsatallationProject")}>
+                <Image className={ProjectCss.img} src={elect} height={500} width={500} alt="pics1"/>
+                <div className={ProjectCss.title}>
+                    <span className={ProjectCss.span}>Electrical Installation</span>
                 </div>
-            </div>
-            <div className={ProjectCss.item}>
-                <Image className={ProjectCss.img} height={100} width={100} src={pics1} alt="First Pic"/>
-                <div className={ProjectCss.content}>
-                    <div className={ProjectCss.title}>Name Slider</div>
-                    <div className={ProjectCss.desc}>Desc</div>
+            </SwiperSlide>
+            <SwiperSlide className={ProjectCss.swiperSlide} onClick={()=>router.push("/projects/mechanicalInstallationProject")}>
+                <Image className={ProjectCss.img} src={hvac11} height={500} width={500} alt="pics1"/>
+                <div className={ProjectCss.title}>
+                    <span className={ProjectCss.span}>Mechanical Installation</span>
                 </div>
-            </div>
-        </div>
-        {/* Arrow Buttons */}
-        <div className={ProjectCss.arrows}>
-            <button onClick={prevClick} className={ProjectCss.arrowBtn}>⇽</button>
-            <button onClick={nextClick} className={ProjectCss.arrowBtn}>⇾</button>
-        </div>
-        {/* Timer Animation */}
-        <div className={ProjectCss.timer}></div>
-      </div>
+            </SwiperSlide>
+            <SwiperSlide className={ProjectCss.swiperSlide}  onClick={()=>router.push("/projects/oilAndGasProject")}>
+                <Image className={ProjectCss.img} src={pics2} height={500} width={500} alt="pics1"/>
+                <div className={ProjectCss.title}>
+                    <span className={ProjectCss.span}>Oil And Gas</span>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className={ProjectCss.swiperSlide} onClick={()=>router.push("/projects/maintenanceProject")}>
+                <Image className={ProjectCss.img} src={maintenance} height={500} width={500} alt="pics1"/>
+                <div className={ProjectCss.title}>
+                    <span className={ProjectCss.span}>General Maintenance</span>
+                </div>
+            </SwiperSlide>
+            <div className={ProjectCss.swiperPagination}></div>
+    </Swiper>
     </div>
-  )
-}
-
-export default Projects;
+  );
+};

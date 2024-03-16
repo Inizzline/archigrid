@@ -6,12 +6,6 @@
     list-style: none;
 }
 
-/* .navList {
-    display: flex;
-    align-items: center;
-    height: 80px;
-} */
-
 .subMenu.clicked {
     display: none;
 }
